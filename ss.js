@@ -2,8 +2,8 @@ jQuery(document).ready( function() {
     if( navigator.geolocation ) {
 	var options = {
 	  enableHighAccuracy: true,
-	  timeout: 120000,
-	  maximumAge: 0
+	  timeout: 10000,
+	  maximumAge: 5000
 	};
         var geoloc_success = function( position ) {
         var lat = position.coords.latitude;
